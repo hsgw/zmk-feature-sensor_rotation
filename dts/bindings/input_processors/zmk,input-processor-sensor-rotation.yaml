@@ -1,0 +1,13 @@
+# Copyright (c) 2025, Takuya Urakawa(@hsgw), 5z6p.com
+# SPDX-License-Identifier: MIT
+
+description: Input Processor for sensor rotation
+
+compatible: "zmk,input-processor-sensor-rotation"
+
+include: ip_zero_param.yaml
+
+properties:
+  rotation-angle:
+    type: int
+    required: true

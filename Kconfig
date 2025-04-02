@@ -1,0 +1,18 @@
+# Sensor Rotation Module Configuration
+
+menuconfig SENSOR_ROTATION
+    bool "Enable Sensor Rotation Module"
+    default n
+    help
+        Enable the sensor rotation module for ZMK.
+
+if SENSOR_ROTATION
+
+config SENSOR_ROTATION_ANGLE
+    int "Sensor rotation angle (degrees)"
+    default 0
+    range 0 360
+    help
+        Angle to rotate the sensor XY coordinates (0 to 360 degrees).
+
+endif # SENSOR_ROTATION

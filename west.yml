@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: remote-name
-      url-base: https://github.com/remote-name
+    - name: hsgw
+      url-base: https://github.com/hsgw
   projects:
     # Together with the above defined remote, this refers to a module located at
     # https://github.com/remote-name/repository-name
-    - name: repository-name
-      remote: remote-name
+    - name: zmk-feature-sensor_rotation
+      remote: hsgw
       # This points to a west manifest file in the remote module for further imports
       import: west.yml

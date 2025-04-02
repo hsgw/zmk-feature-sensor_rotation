@@ -1,0 +1,9 @@
+/ {
+    input_processors {
+        sensor_rotation: sensor_rotation {
+            compatible = "zmk,input-processor-sensor-rotation";
+            #input-processor-cells = <0>;  // No arguments needed
+            rotation-angle = <0>; // default
+        };
+    };
+};
